@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load datasets
-day_df = pd.read_csv('day_df.csv')
-hour_df = pd.read_csv('hour_df.csv')
+day_df = pd.read_csv('dashboard/day_df.csv')
+hour_df = pd.read_csv('dashboard/hour_df.csv')
 
 def plot_seasonal_rentals():
     plt.figure(figsize=(8, 5))
