@@ -267,26 +267,11 @@ st.sidebar.title('Bike-Sharing')
 st.sidebar.write('Dataset Date Range: 2011 - 2012')
 
 # Sidebar options
-options = ['Home', 'Seasonal Rentals', 'Working Day vs Weekend/Holiday', 'Impacts of Weather', 'Casual Users vs Registered Users']  
+options = ['Seasonal Rentals', 'Working Day vs Weekend/Holiday', 'Impacts of Weather', 'Casual Users vs Registered Users']  
 selected_option = st.sidebar.selectbox("Select Analysis:", options)
 
-# Home section
-if selected_option == 'Home':
-    st.title("Bike-Sharing Analysis")
-    img_file = 'bike-sharing.jpg'
-    st.image(img_file, caption='Bike-Sharing', width=300)
-    st.write("This app provides insights into bike-sharing rentals from 2011 to 2012.")
-    st.write("Explore the data by selecting an option from the sidebar.")
-    st.subheader("Dataset")
-    st.markdown("[Source](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset)")
-    st.subheader("Created by")
-    st.write("Vincent Pangdipta")
-    st.subheader("Email")
-    st.markdown("[vincent17ede@gmail.com](mailto:vincent17ede@gmail.com)")
-    st.markdown("[m195b4ky4430@bangkit.academy](m195b4ky4430@bangkit.academy)")
-
 # Seasonal Rentals
-elif selected_option == 'Seasonal Rentals':
+if selected_option == 'Seasonal Rentals':
     st.header('Seasonal Rentals')
     with st.container():
         plot_seasonal_rentals()  
