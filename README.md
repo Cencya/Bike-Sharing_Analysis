@@ -8,8 +8,8 @@ pip install -r requirements.txt
 ```
 # Setup Environment - Shell/Terminal
   ```
-  mkdir Proyek_Analisis_Data
-  cd Proyek_Analisis_Data
+  mkdir submission
+  cd submission
   pip install -r requirements.txt
   ```
 # Run Streamlit App
